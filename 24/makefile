@@ -3,10 +3,10 @@ CC = gcc
 CFLAGS = -Wall -Wextra -std=c2x
 
 # Directories and files
-SRCS = day_1.c distance_check.c sorting.c utility.c
-HEADERS = distance_check.h sorting.h utility.h
+SRCS = day_1.c distance_check.c sorting.c utility.c similarity.c
+HEADERS = distance_check.h sorting.h utility.h similarity.h
 OBJS = $(SRCS:.c=.o)
-TARGET = run
+TARGET = test
 DATA_DIR = data
 
 # Build target

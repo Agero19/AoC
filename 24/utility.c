@@ -24,3 +24,15 @@ void read_and_store_input(const char *filename, int *list1, int *list2, size_t *
 
     fclose(file);
 }
+
+int nb_occur(int *list, size_t count, int value) {
+    int occur = 0;
+
+    for (size_t i = 0; i < count; i++) {
+        if (list[i] == value) {
+            occur += 1;
+        }
+    }
+
+    return occur;
+}

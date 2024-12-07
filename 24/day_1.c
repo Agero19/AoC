@@ -2,6 +2,7 @@
 #include "sorting.h"
 #include "utility.h"
 #include "distance_check.h"
+#include "similarity.h"
 
 int main() {
     const char *filename = "data/location_id.txt";  
@@ -18,6 +19,8 @@ int main() {
     //Counting distance
     long long result = count_total_distance(list1, list2, count);
     printf("Total distance = %lld\n", result);
+    long long similarity = calcuate_similarity(list1, list2, count);
+    printf("Similarity score of two arrays = %lld\n", similarity);
 
     return 0;
 }
